@@ -1,0 +1,52 @@
+<% content_for :publish_blog_form do %>
+  <div class="publish-blog-form">
+    <ul>
+      <li>
+        <label for="blog-title">Title</label>
+        <input type="text" name="blog-title" class="blog-title" />
+      </li>
+      <li>
+        <label for="blog-time">Title</label>
+        <input type="text" name="blog-title" class="blog-title" />
+      </li>
+    </ul>
+  </div>
+<% end %>
+<% content_for :sidebar do %>
+  <div class="owner">
+    <div class="pics">
+      <a href="javascript:void(0);">
+        <%= image_tag "me.jpg", :alt => "Chris", :size => "40x40" %>
+      </a>
+    </div>
+    <div class="description">
+      <div>Chris</div>
+      <div>China shenzhen</div>
+    </div>
+  </div>
+  <div class="category-list clear">
+    <ul>
+      <li><a href="#">生活(0)</a></li>
+      <li><a href="#">javascript(0)</a></li>
+      <li><a href="#">ruby(0)</a></li>
+      <li><a href="#">杂记(0)</a></li>
+      <li><a href="#">前端(0)</a></li>
+    </ul>
+  </div>
+  <div class="post-like">
+    <h2>Post I Like</h2>
+    <ul class="post-like-list">
+      <li>
+        <div class="post-like-title">Hello</div>
+        <div class="post-like-content">
+          <p>hel htlskkl hklahdkf kjsdklafj </p>
+        </div>
+        <p class="post-commont">I wasn't like it</p>
+      </li>
+    </ul>
+  </div>
+  <div class="post-search">
+    <input class="search" type="text" name="search" id="search" placeholder="Search" />
+  </div>
+  <div class="last-post"></div>
+<% end %>

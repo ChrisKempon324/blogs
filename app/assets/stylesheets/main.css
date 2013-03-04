@@ -1,0 +1,188 @@
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+    height: 100%;
+    min-height: 800px;
+}
+
+.blog-list, .publish-blog-form {
+    width: 740px;
+    float: left;
+    margin-top: 80px;
+}
+
+.publish-blog-form {
+    width: 582px;
+    padding: 0 79px;
+}
+
+.post {
+    background-color: #fff;
+    border-radius: 2px;
+    width: 740px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+    padding-bottom: 6px;
+    margin-bottom: 55px;
+}
+
+.blog-list .post .post-title {
+    width: 100%;
+    height: 30px;
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+.blog-list .post .post-media, .blog-list .post .post-media img {
+    width: 740px;
+}
+
+.blog-list .post .post-content {
+    margin: 15px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #E4E1E1;
+}
+
+.blog-list .post .post-footer {
+    margin: 15px;
+    padding-left: 12px;
+}
+
+.side-bar {
+    width: 200px;
+    float: right;
+    margin: 80px 10px 0 10px;
+}
+
+.side-bar .owner {
+    height: 40px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.side-bar .owner .pics {
+    float: left;
+}
+
+.side-bar .owner .description {
+    height: 40px;
+    float: left;
+    margin-left: 20px;
+}
+
+.side-bar .category-list {
+    padding: 8px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.side-bar .category-list li {
+    padding: 3px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.side-bar .category-list li:hover {
+    background: rgba(0, 0, 0, .07);
+    border: rgba(0, 0, 0, .14);
+    text-decoration: none;
+}
+
+.side-bar .category-list li a {
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+    text-shadow: 1px 1px white;
+}
+
+.side-bar .post-like {
+    border-top: 1px solid white;
+    padding: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, .14);
+}
+
+.side-bar .post-like h2 {
+    text-align: center;
+    font-size: 21px;
+    margin: 2px;
+    color: rgb(85, 85, 85);
+    text-shadow: 1px 1px white;
+}
+
+.side-bar .post-like .post-like-list {
+    padding: 2px;
+}
+
+.side-bar .post-like .post-like-list .post-like-title {
+    background-color: rgba(0, 0, 0, .07);
+    border: 1px solid rgba(0, 0, 0, .14);
+    padding: 3px;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.side-bar .post-like .post-like-list .post-commont {
+    padding: 2px;
+    color: rgb(85, 85, 85);
+    text-shadow: 1px 1px white;
+}
+
+.side-bar .post-like .post-like-list .post-like-content {
+    background-color: white;
+    margin-top: 2px;
+}
+
+.side-bar .post-search {
+    border-top: 1px solid white;
+    padding: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, .14);
+}
+
+.side-bar .post-search .search {
+    width: 176px;
+    outline: none;
+    height: 23px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+    text-shadow: 0 1px white;
+}
+
+.side-bar .last-post {
+    border-top: 1px solid white;
+}
+
+.pagination .page {
+    width: 740px;
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.pagination .page a {
+    float: right;
+    background: url('/assets/page-btn.png');
+    display: block;
+    width: 75px;
+    height: 18px;
+    line-height: 22px;
+    color: #464444;
+    padding: 3px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    text-shadow: 1px 1px #F1F1F1;
+}
+
+.footer {
+    height: 36px;
+    background: url(/assets/footer-bg.png);
+    text-align: center;
+    color: #666;
+}
+
+.footer p {
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+.footer p a {
+    color: #0F3455;
+}

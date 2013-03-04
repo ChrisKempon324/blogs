@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+
+    <div class="wrap">
+      <%= yield :blog_list %>
+      <%= yield :publish_blog_form %>
+      <div class="side-bar">
+        <%= yield :sidebar %>
+      </div>
+      <%= yield :page %>
+    </div>
+    <div class="footer">
+      <p>Copyright © 2007–2013 <a href="/">Chris</a>
+    </div>
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>

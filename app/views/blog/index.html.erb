@@ -1,0 +1,65 @@
+<% content_for :blog_list do %>
+  <div class="blog-list">
+    <% @blog.each do |item| %>
+      <div class="post">
+        <div class="post-title">
+          <h3><%= item.blog_title %></h3>
+        </div>
+        <div class="post-media">
+          <%= image_tag item.blog_pics, :title => "Chris" %>
+        </div>
+        <p class="post-content"><%= item.blog_content %></p>
+        <div class="post-footer">
+          <span><%= item.updated_at.strftime('%Y-%m-%d') %></span>
+          <span>Publish By <%= item.blog_publisher %></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+<% content_for :sidebar do %>
+  <div class="owner">
+    <div class="pics">
+      <a href="javascript:void(0);">
+        <%= image_tag @user.user_pic, :alt => "Chris", :size => "40x40" %>
+      </a>
+    </div>
+    <div class="description">
+      <div><%= @user.user_name %></div>
+      <div><%= @user.user_address %></div>
+    </div>
+  </div>
+  <div class="category-list clear">
+    <ul>
+      <li><a href="#">生活(0)</a></li>
+      <li><a href="#">javascript(0)</a></li>
+      <li><a href="#">ruby(0)</a></li>
+      <li><a href="#">杂记(0)</a></li>
+      <li><a href="#">前端(0)</a></li>
+    </ul>
+  </div>
+  <div class="post-like">
+    <h2>Post I Like</h2>
+    <ul class="post-like-list">
+      <li>
+        <div class="post-like-title">Hello</div>
+        <div class="post-like-content">
+          <p>hel htlskkl hklahdkf kjsdklafj </p>
+        </div>
+        <p class="post-commont">I wasn't like it</p>
+      </li>
+    </ul>
+  </div>
+  <div class="post-search">
+    <input class="search" type="text" name="search" id="search" placeholder="Search" />
+  </div>
+  <div class="last-post"></div>
+<% end %>
+<% content_for :page do %>
+<div class="pagination">
+  <div class="page">
+    <a href="#">Next Page -></a>
+  </div>
+</div>
+<% end %>
