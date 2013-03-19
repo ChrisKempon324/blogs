@@ -13,3 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+  //var ret = "";
+			//for(var i = 1; i <= 8; ++i) {
+			//	ret += Math.floor(Math.random()*16.0).toString(16);
+			//	if(i === 4) {
+			//		ret += '-';
+			//	}
+			//}
+		//	return ret; 
